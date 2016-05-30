@@ -1,0 +1,26 @@
+
+<br>
+
+<h1>Welcome to WBConnect</h1>
+{{#each name}}
+<div id="border" >
+  
+  <br>
+  <p id="peoplelistName">{{first_name}} {{last_name}}</p>
+  <img id="peoplelist" src="{{image}}" width="300px" height="200px"></img>
+  <p id="peoplelist">{{birth_place}}</p>
+  <p id="peoplelist">{{designation}}</p>
+  <p id="peoplelist">{{gender}}</p>
+  <p id="peoplelist">{{Marriagestatus}}</p>
+  <p id="peoplelist">{{date_of_birth}}</p>
+  <p id="peoplelist">{{current_location}}</p>
+  <p id="peoplelist">{{email}}</p>
+ 
+</div>
+{{/each}}
+
+<form method="POST" id ="addNew" action="/new-user" >
+                                              
+                               <input type="submit" id="friendbtn" value="Back to Home"></input>
+                               <input type="text" id="first_name" name="first_name" value={{user}}></input>    
+                              </form>   

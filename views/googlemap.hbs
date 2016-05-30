@@ -1,0 +1,165 @@
+
+<form method="POST" id ="home" action="/new-user" >
+                                              
+                               <input type="submit" id="friendbtn" value="HOME"></input>
+                               <input type="text" id="first_name" name="first_name" value={{user}}></input>    
+                              </form>   
+  
+
+  
+    
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADrKamh9JljunD_hq_FsCAYxYmuohKN70">
+    </script>
+
+    <script>
+      var map;
+
+      function initialize() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: new google.maps.LatLng(-40.9,-184.8),
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        });
+
+        // Create a <script> tag and set the USGS URL as the source.
+        var script = document.createElement('script');
+        // (In this example we use a locally stored copy instead.)
+       // script.src = 'http://earthquake.usgs.gov/earthquak6es/feed/v1.0/summary/2.5_week.geojsonp';
+       // script.src = '/data.js';
+        var data = 
+{geometry: {
+type: "Point",
+coordinates: [
+174.911583,
+-41.205384,
+
+]
+}}
+
+var data1 = 
+  {geometry: {
+type: "Point",
+coordinates: [[
+-67.3789,
+18.7787,
+8
+],[-155.9599,
+56.5606,
+68.8]]
+}}
+
+var data2 = {geometry: {
+type: "Point",
+coordinates: [174.776089,
+-41.293146,
+]
+}}
+ var data3 = 
+{geometry: {
+type: "Point",
+coordinates: [
+174.883583,
+-41.227131,
+
+]
+}}
+
+ var data4 = 
+{geometry: {
+type: "Point",
+coordinates: [
+174.775625,
+-41.281812,
+
+]
+}}
+var data5 = 
+{geometry: {
+type: "Point",
+coordinates: [
+174.837192,
+-41.135748,
+
+]
+}}
+var coords5 =data5.geometry.coordinates
+          var latLng = new google.maps.LatLng(coords5[1],coords5[0]);
+          console.log(latLng,"dgd")
+          var marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+          });
+var coords4 =data4.geometry.coordinates
+          var latLng = new google.maps.LatLng(coords4[1],coords4[0]);
+          console.log(latLng,"dgd")
+          var marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+          });
+var coords3 =data3.geometry.coordinates
+          var latLng = new google.maps.LatLng(coords3[1],coords3[0]);
+          console.log(latLng,"dgd")
+          var marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+          });
+var coords =data.geometry.coordinates
+          var latLng = new google.maps.LatLng(coords[1],coords[0]);
+          console.log(latLng,"dgd")
+          var marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+          });
+  var coordss =data2.geometry.coordinates
+          var latLng = new google.maps.LatLng(coordss[1],coordss[0]);
+          console.log(latLng,"dgd")
+          var marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+          });
+                  
+//var i;
+  //var cord=   data1.geometry.coordinates[1]   
+   
+   var cord=  data1.geometry.coordinates
+for (i=0;i<data1.geometry.coordinates.length;i++)
+{
+  var cord=  data1.geometry.coordinates
+
+ var latLng = new google.maps.LatLng(cord[1],cord[0]);
+          
+          var marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+})
+        }
+console.log(data.geometry.coordinates,"jshds")
+        document.getElementsByTagName('head')[0].appendChild(script);
+      }
+
+      // Loop through the results array and place a marker for each
+      // set of coordinates.
+      
+      google.maps.event.addDomListener(window, 'load', initialize)
+
+    </script>
+    <h1>Restaurents</h1>
+
+  <div  id="map" style="width:500px;height:380px;margin-top:190px;margin-right:90px"></div>
+
+  {{#each Restaurents}}
+  <div id="Restaurents">
+  <br>
+  <br>
+  
+<p>{{name}}</p>
+<p>{{address}}</p>
+<p>{{description}}</p>
+<p>Reviews {{Reviews}}</p>
+ 
+    </div>
+    </div>
+       {{/each}}
+       
+    

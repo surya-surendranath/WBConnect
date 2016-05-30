@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.3.js">
+</script>
+
+<body ng-app="ngAnimate">
+
+<form method="POST" id ="profileTopSet" action="/login" >
+                                    
+                                      <input type="submit" id="profileTopSet"  value="sign out" placeholder="Edit me"></input>
+                                          <input type="text" id="first_name" name="first_name" value={{user}}></input>    
+                              <p id="profileTopSet">Hi {{user}}</p>
+                              </form>            
+
+{{#each infos}}
+  
+  <p id="feeds" >  <img src="{{image}}" id="imagePeople">  {{first_name}} {{last_name}}</p>
+  
+ <p>----------------------------</p>
+{{/each}}
+
+<br>
+
+
+<h1 >Welcome to WBConnect</h1>
+<input id="checkBox" checked="checked" type="checkbox" ng-model="myCheck">
+<div id ="Menubar" ng-show="myCheck">
+<form method="POST"  action="/people" >
+                                    
+                                      <input type="submit" id="bar" value="Find People" placeholder="Edit me"></input>
+                                          <input type="text" id="first_name" name="first_name" value={{user}}></input>    
+                              
+                              </form>            
+<form method="POST"  action="/events" >
+                                    
+                                      <input type="submit" id="bar" value="Find Events" placeholder="Edit me"></input>
+                                          <input type="text" id="first_name" name="first_name" value={{user}}></input>    
+                              
+                              </form>    
+                              <form method="POST"  action="/tweets" >
+                                    
+                                      <input type="submit" id="bar" value="Bolly News" placeholder="Edit me"></input>
+                                          <input type="text" id="first_name" name="first_name" value={{user}}></input>    
+                              
+                              </form>    
+                              <form method="POST"  action="/googlemap" >
+                                    
+                                      <input type="submit" id="bar" value="Restaurents" placeholder="Edit me"></input>
+                                          <input type="text" id="first_name" name="first_name" value={{user}}></input>    
+                              
+                              </form>  
+                              </div>
+<div id="border">
+ 
+<br>
+
+<form method="POST" id ="postNew" action="/main" >
+                                      <input id="feeds" type="text" name="feeds"></input> 
+ 
+                                      <input type="submit" id="postNew" value="Post"></input>
+                                          <input type="text" id="first_name" name="first_name" value={{user}}></input>  </center>
+                   </form>            
+      <br>
+      <br>
+
+  {{#each name}}
+  
+  <p id="feeds" >  <img src="{{image}}" id="imagePeople">  {{first_name}} {{last_name}}</p>
+  <p>{{feeds}}
+ <p>----------------------------</p>
+{{/each}}
+</div>
+     
+
+
+
+</body>

@@ -1,0 +1,368 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #cc6699;
+  background-repeat: repeat;
+}
+#tweets {
+  float:center;
+  font-style: italic;
+ 
+  margin-left:120px;
+  font-weight: bold;
+}
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+html {
+  background-color:#ddd6f3;
+}
+#home {
+  float:right;
+  margin-top:-20px;
+  color: #660033;
+}
+h1 {
+  color: #1a75ff;
+  font-family: 'Trocchi', serif;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 48px;
+ 
+  text-align: center;
+ padding-right:80px;
+}
+#error {
+   margin-left: 70px;
+
+   font-style: italic;
+}
+#login2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 70px;
+}
+#checkBox {
+  float:right;
+  checked:checked;
+}
+#Restaurents {
+  font-weight: bold;
+}
+.peopleimg {
+ margin-top:20px;
+ margin-left: 300px;
+
+}
+#addNew{
+  float:center;
+  
+ 
+}
+#friendbtn {
+color:#660033;
+font-weight: bold;
+}
+#peoplelist {
+  float:center;
+  font-weight: bold;
+  margin-left:150px;
+   color:white;
+}
+#peoplelistName {
+  float:center;
+  font-weight: bold;
+  margin-left:180px;
+  font-size: 17px;
+  font-style:italic;
+  color: #e6ffff;
+}
+#map {
+  float:right;
+  width:500px;
+  height:80px;
+  
+}
+#mainpagelogin {
+  margin-top: -150px;
+  float:right;
+}
+#submitButton {
+  float:center;
+  margin-left:60px;
+}
+#submitButton2 {
+  float:center;
+  margin-top:1px;
+   margin-left:58px;
+}
+#name {
+   margin-left:24px;
+}
+#email {
+  margin-left:24px;
+
+}
+#submitButton {
+  float:center;
+}
+#mainpage {
+  float:center;
+  margin-left:500px;
+}
+.joinbtn {
+  height:30px;
+ margin-left:580px;
+ width:100px;
+}
+.textarea {
+float:center;
+margin-top:50px;
+margin-left:540px;
+}
+
+.textarea1 {
+float:center;
+margin-top:60px;
+margin-left:540px;
+}
+
+.textarea2 {
+float:center;
+margin-top:70px;
+margin-left:540px;
+}
+
+
+.newloginbtn {
+  margin-top :60px;
+  float:center;
+  height:30px;
+  float:center;
+
+  
+}
+.Exloginbtn {
+  margin-top:20px;
+  
+  height:30px;
+  float:center;
+ 
+  
+}
+
+.leftcom-image {
+  margin-top: 90px;
+  float:left;
+  margin-left: -10px;
+}
+
+#left-coverimg {
+  list-style-type: none;
+}
+
+ #left-coverimg img {
+   border:3px solid white;
+   border-radius: 50%;
+
+   box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+.rightcom-image {
+  margin-top: 90px;
+  float:right;
+  margin-right: -10px;
+}
+
+#right-coverimg {
+  list-style-type: none;
+}
+
+.Event {
+  margin-top: 170px;
+  font-size:20px;
+  text-align: center;
+}
+
+.Temples {
+  margin-top: 170px;
+  font-size:20px;
+  text-align: center;
+}
+
+.People {
+  margin-top: 170px;
+  font-size:20px;
+  text-align: center;
+}
+#profile {
+  float:right;
+  padding-top:-100px;
+}
+#imagePeople {
+  width: 20px;
+  height:20px;
+}
+#feeds {
+  text-indent: 20px;
+  word-wrap: break-word;
+}
+#profileTopSet {
+ 
+ float:right;
+ margin-right:1px;
+ margin-top:-4px;
+ color:#660033;
+ font-weight: bold;
+ font-style: italic;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+#feeds {
+  margin-left:-2px;
+  width:350px;
+  height:40px;
+  margin-top:-10px;
+
+}
+#feeds1
+{
+
+   color: #00ff00;
+  
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 5s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 20;/* Chrome, Safari, Opera */
+
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: 20;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {color: #00ff00;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: red;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {color: #00ff00;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: red;}
+}
+#bar {
+  width:100px;
+  height:28px;
+  
+}
+#Menubar {
+  float:right; 
+  margin-top: 30px;
+
+}
+#profileTop {
+  float:right;
+  margin-right: -20px;
+  font-weight: bold;
+  font-size:16px;
+  font-style: italic;
+  margin-top:70px;
+  color: #800040;
+}
+#first_name {
+visibility:hidden;
+}
+.menupage {
+ 
+margin-left:1100px;
+margin-top:-400px;
+}
+#postNew {
+
+margin-top: 3px;
+margin-left:200px;
+width:80px;
+color:#ff9933;
+font-weight: bold
+}
+
+
+.dropbtn {
+    background-color: #D1D1D1;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+    padding-right:10px;
+    padding-top:-20px;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding:1px;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 3px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+   
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #B5AEA8;
+     
+}
+#border {
+  border-style:solid;
+  width:600px;
+  float:center;
+  margin-left:400px;
+  margin-top:30px;
+  background-color: #c65353
+}
+#nextborder {
+  border-style:solid;
+  width:575px;
+  float:center;
+ 
+ margin-left:10px;
+ margin-right: 10px;
+  margin-top:10px;
+  margin-bottom: 10px;
+
+}

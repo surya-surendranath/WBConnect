@@ -1,0 +1,37 @@
+<body>
+<h1>WBC Events</h1>
+<br>
+<br>
+<br>
+<table style="width:100%">
+  <tr>
+    <td>EventId</td>
+    <td>Name</td>
+    <td>Date</td>
+    <td>StartTime</td>
+      <td>EndTime</td>
+        <td>description</td>
+  </tr>
+   {{#each Events}}
+  <tr>
+ 
+    <td>{{id}}</td>
+    <td>{{name}}</td>
+    <td>{{Date}}</td>
+      <td>{{Starttime}}</td>
+        <td>{{Endtime}}</td>
+          <td>{{description}}</td>
+  </tr>
+  {{/each}}
+</table>
+<br>
+<br>
+<br>
+<br>
+<form method="POST" id ="addNew" action="/new-user" >
+                                              
+                               <input type="submit" id="friendbtn" value="Back to Home"></input>
+                               <input type="text" id="first_name" name="first_name" value={{user}}></input>    
+                              </form>   
+
+</body>
