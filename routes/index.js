@@ -8,8 +8,7 @@ var model = require('../lib/model') (knex)
 var app = require('express')();
 var getTweets = require('../twitter-api/twitter')
 
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
+var bcrypt = require('bcrypt')
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('login', { title: 'Wellington Indian Community' });
