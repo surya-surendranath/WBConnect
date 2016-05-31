@@ -7,11 +7,11 @@
 
 <body ng-app="ngAnimate">
 
-<form method="POST" id ="profileTopSet" action="/login" >
+<form method="POST" id ="profileTopSet" action="/logout" >
                                     
                                       <input type="submit" id="profileTopSet"  value="sign out" placeholder="Edit me"></input>
                                           <input type="text" id="first_name" name="first_name" value={{user}}></input>    
-                              <p id="profileTopSet">Hi {{user}}</p>
+                              <p id="profileTopSet">Hi {{user}}&nbsp</p>
                               </form>            
 
 {{#each infos}}
@@ -24,8 +24,9 @@
 <br>
 
 
-<h1 >Welcome to WBConnect</h1>
+<h1 id="mainHeader">Welcome to WBConnect</h1>
 <input id="checkBox" checked="checked" type="checkbox" ng-model="myCheck">
+<div>
 <div id ="Menubar" ng-show="myCheck">
 <form method="POST"  action="/people" >
                                     
@@ -68,12 +69,12 @@
   {{#each name}}
   
   <p id="feeds" >  <img src="{{image}}" id="imagePeople">  {{first_name}} {{last_name}}</p>
-  <p>{{feeds}}
+  <p id="mainFeeds">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp      {{feeds}}</p>
  <p>----------------------------</p>
 {{/each}}
 </div>
-     
-
+  </div>   
+</p>
 
 
 </body>

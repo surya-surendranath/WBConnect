@@ -13,6 +13,9 @@ var bcrypt = require('bcrypt')
 router.get('/', function(req, res, next) {
   res.render('login', { title: 'Wellington Indian Community' });
 });
+router.post('/logout', function(req, res, next) {
+  res.render('login', { title: 'Wellington Indian Community' });
+});
 
 router.get('/new-user', function(req, res, next) {
   res.redirect('newuser', { title: 'Wellington Indian Community' });
