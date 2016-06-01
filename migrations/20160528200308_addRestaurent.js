@@ -6,8 +6,8 @@ exports.up = function(knex, Promise) {
       table.increments('id')
       table.string('name')
       table.string('address')
-         table.string('description')
-            table.string('Reviews')
+      table.string('description')
+      table.string('Reviews')
   })
 };
 

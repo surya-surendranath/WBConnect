@@ -29,14 +29,12 @@ h1 {
   font-size: 50px;
   font-weight: normal;
   line-height: 48px;
- 
   text-align: center;
- padding-right:80px;
+  padding-right:80px;
 }
 #error {
-   margin-left: 70px;
-
-   font-style: italic;
+  margin-left: 70px;
+  font-style: italic;
 }
 #login2 {
   font-size: 20px;
@@ -56,19 +54,19 @@ h1 {
 
 }
 #addNew{
-  float:center;
+ float:center;
  margin-left:-30px;
  
 }
 #friendbtn {
-color:#660033;
-font-weight: bold;
+ color:#660033;
+ font-weight: bold;
 }
 #peoplelist {
   float:center;
   font-weight: bold;
   margin-left:150px;
-   color:white;
+  color:white;
 }
 #peoplelistName {
   float:center;
@@ -95,10 +93,10 @@ font-weight: bold;
 #submitButton2 {
   float:center;
   margin-top:1px;
-   margin-left:58px;
+  margin-left:58px;
 }
 #name {
-   margin-left:24px;
+  margin-left:24px;
 }
 #email {
   margin-left:24px;
@@ -134,22 +132,17 @@ margin-top:70px;
 margin-left:540px;
 }
 
-
 .newloginbtn {
   margin-top :60px;
   float:center;
   height:30px;
   float:center;
-
-  
+ 
 }
 .Exloginbtn {
   margin-top:20px;
-  
   height:30px;
   float:center;
- 
-  
 }
 
 .leftcom-image {
@@ -210,9 +203,7 @@ margin-left:540px;
   text-indent: 20px;
   word-wrap: break-word;
 }
-#mainFeeds {
-  
-}
+
 #profileTopSet {
  
  float:right;
@@ -350,9 +341,7 @@ font-weight: bold
     background-color: #B5AEA8;
      
 }
-#mainHeader{
 
-}
 #border {
   border-style:solid;
   width:600px;
@@ -364,9 +353,8 @@ font-weight: bold
   border-style:solid;
   width:575px;
   float:center;
- 
- margin-left:10px;
- margin-right: 10px;
+  margin-left:10px;
+  margin-right: 10px;
   margin-top:10px;
   margin-bottom: 10px;
 
