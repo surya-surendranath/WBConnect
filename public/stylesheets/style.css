@@ -4,6 +4,21 @@ body {
   background-color: #cc6699;
   background-repeat: repeat;
 }
+
+
+@media only screen and (max-width:800px)
+{
+#addNew{
+ float:left;
+ font-size: 10px;
+
+}
+#mainpage {
+  float:left;
+  margin-left: -10px;
+  font-size: 10px;
+}
+}
 #tweets {
   float:center;
   font-style: italic;
@@ -107,7 +122,7 @@ h1 {
 }
 #mainpage {
   float:center;
-  margin-left:500px;
+  /*margin-left:500px;*/
 }
 .joinbtn {
   height:30px;
