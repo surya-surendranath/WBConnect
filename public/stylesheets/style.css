@@ -1,7 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #cc6699;
+  /*background-color: #cc6699;*/
   background-repeat: repeat;
 }
 
@@ -18,6 +18,15 @@ body {
   margin-left: -10px;
   font-size: 10px;
 }
+#image {
+  height:200px;
+  width:400px;
+  margin-top:50px;
+  margin-left: -250px;
+  float:left;
+
+}
+
 }
 #tweets {
   float:center;
@@ -115,7 +124,9 @@ h1 {
 }
 #email {
   margin-left:24px;
-
+}
+#img {
+  margin-left: 24px;
 }
 #submitButton {
   float:center;
