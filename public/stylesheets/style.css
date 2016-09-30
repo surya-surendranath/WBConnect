@@ -14,9 +14,13 @@ body {
 
 }
 #mainpage {
-  float:left;
-  margin-left: -10px;
+  float:center;
   font-size: 10px;
+}
+#submitButton {
+  height:30px;
+
+  width:75px;
 }
 #image {
   height:200px;
@@ -24,6 +28,7 @@ body {
   margin-top:50px;
   margin-left: -250px;
   float:left;
+  visibility: hidden;
 
 }
 
