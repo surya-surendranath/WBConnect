@@ -16,6 +16,7 @@ body {
 #mainpage {
   float:center;
   font-size: 10px;
+   margin-left:0px;
 }
 #submitButton {
   height:30px;
@@ -138,7 +139,7 @@ h1 {
 }
 #mainpage {
   float:center;
-  /*margin-left:500px;*/
+
 }
 .joinbtn {
   height:30px;

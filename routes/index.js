@@ -8,10 +8,15 @@ var model = require('../lib/model') (knex)
 var app = require('express')();
 var getTweets = require('../twitter-api/twitter')
 var bcrypt = require('bcrypt')
+var cool = require('cool-ascii-faces');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('login', { title: 'Wellington Indian Community' });
+});
+
+app.get('/cool', function(request, response) {
+  response.send(cool());
 });
 
 router.post('/logout', function(req, res, next) {
