@@ -74,6 +74,7 @@ router.post('/newuser', function(req, res, next) {
 
       db.getAllSort('users', function(err, data) {
         console.log(req.body.first_name,"hi")
+        console.log(req.body.image);
         res.render('main',{user:req.body.first_name,name:data,image:data.image});   
       })
     })
