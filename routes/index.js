@@ -9,7 +9,20 @@ var app = require('express')();
 var getTweets = require('../twitter-api/twitter')
 var bcrypt = require('bcrypt')
 var cool = require('cool-ascii-faces');
+/*some  postgres stuff*/
+var pg = require('pg');
 
+router.get('/db', function (request, response) {
+  pg.connect(process.env.DATABASE_URL, function(err, client, done) {
+    client.query('SELECT * FROM test_table', function(err, result) {
+      done();
+      if (err)
+       { console.error(err); response.send("Error " + err); }
+      else
+       { res.render('pages/db', {results: result.rows} ); }
+    });
+  });
+});
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('login', { title: 'Wellington Indian Community' });
