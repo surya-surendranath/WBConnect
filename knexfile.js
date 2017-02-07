@@ -8,6 +8,18 @@ module.exports = {
       filename: './dbSetup.sqlite3'
     }
   },
+  production: {
+    client: 'postgresql',
+    connection: process.env.HEROKU_POSTGRESQL_ROSE_URL,
+
+        pool: {
+            min: 2,
+            max: 10
+        },
+        migrations: {
+            tableName: 'knex_migrations'
+        }
+    },
  // the directory your migration files are located in
   directory: __dirname + '/migrations',
 
