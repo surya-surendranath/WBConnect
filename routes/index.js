@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var Knex = require('knex')
 var config = require('../knexfile')
+var pg = require('knex')({client: 'pg'});
+
 var knex = Knex(config[process.env.NODE_ENV || 'development'])
 var db = require('../lib/db')(knex)
 var model = require('../lib/model') (knex)
