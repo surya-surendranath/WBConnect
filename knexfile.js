@@ -10,7 +10,11 @@ module.exports = {
   },
   production: {
     client: 'postgresql',
+<<<<<<< HEAD
     connection: process.env.HEROKU_POSTGRESQL_CHARCOAL_URL,
+=======
+    connection: process.env.DATABASE_URL,
+>>>>>>> e1534478a2f7b381d289a3614df62bb90c55dc71
 
         pool: {
             min: 2,

@@ -1,9 +1,10 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  /*background-color: #cc6699;*/
+  background-color: #8fc3e7;
   background-repeat: repeat;
 }
+
 
 
 @media only screen and (max-width:800px)
