@@ -46,7 +46,7 @@ a {
   text-decoration: none;
 }
 html {
-  background-color:#ddd6f3;
+  background-color: gray;
 }
 #home {
  margin-right: 2px;
@@ -54,7 +54,7 @@ html {
   color: #660033;
 }
 h1 {
-  color: #1a75ff;
+  color: orange;
   font-family: 'Trocchi', serif;
   font-size: 50px;
   font-weight: normal;
@@ -262,7 +262,7 @@ th, td {
 #feeds1
 {
 
-   color: #00ff00;
+   color: white;
   
     -webkit-animation-name: example; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 5s; /* Chrome, Safari, Opera */
@@ -379,7 +379,7 @@ font-weight: bold
   width:600px;
   margin-left:300px;
   margin-top:50px;
-  background-color: #c65353
+  background-color: olive;
 }
 #nextborder {
   border-style:solid;
