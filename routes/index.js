@@ -90,7 +90,7 @@ router.post('/newuser', function(req, res, next) {
       db.getAllSort('users', function(err, data) {
         console.log(req.body.first_name,"hi")
         console.log(req.body.image);
-        res.render('main',{user:req.body.first_name,name:data,image:data.image});   
+        res.render('main',{user:req.body.first_name,name:data,image:req.body.image});   
       })
     })
 
@@ -114,6 +114,7 @@ router.post('/new-user', function(req, res, next) {
 
     db.findOne('userInfo', {first_name:req.body.first_name}, function(err, info){
 
+    
       db.addNew('users',{first_name:req.body.first_name,feeds:req.body.feeds,image:info.image,last_name:info.last_name,current_location:info.current_location}, function(err,data){
       
       console.log(req.body,"jdfhdj")
@@ -122,10 +123,11 @@ router.post('/new-user', function(req, res, next) {
          console.log(info.image,"sdjfhdskj")
 
            db.getAllSort('users', function(err, data) {
-            res.render('main',{name:data,user:req.body.first_name,infos:info.image,image:info.image})
+            res.render('main',{name:data,user:req.body.first_name,infos:info.image,image:req.body.image})
      
           }) 
-      });
+         })  
+      
     })
   })
 })

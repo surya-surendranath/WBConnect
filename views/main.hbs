@@ -4,14 +4,16 @@
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.3.js">
 </script>
-
+ <p id="profileTop">Hi {{user}}&nbsp</p>
 <body ng-app="ngAnimate">
 
 <form method="POST" id ="profileTopSet" action="/logout" >
                                     
       <input type="submit" id="profileTopSet"  value="sign out" placeholder="Edit me"></input>
-      <input type="text" id="first_name" name="first_name" value={{user}}></input>    
-      <p id="profileTopSet">Hi {{user}}&nbsp</p>
+      <input type="text" id="first_name" name="first_name" value={{image}}></input>   
+      
+     
+     
 </form>            
 
 {{#each infos}}

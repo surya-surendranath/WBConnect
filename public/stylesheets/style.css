@@ -242,6 +242,10 @@ margin-left:540px;
   width: 25px;
   height:25px;
 }
+#imagePeople1 {
+  width: 125px;
+  height:125px;
+}
 #feeds {
   text-indent: 20px;
   word-wrap: break-word;
@@ -310,12 +314,12 @@ th, td {
   margin-right:-180px;
 }
 #profileTop {
-  float:right;
-  margin-right: -20px;
+  
+  margin-left: 920px;
   font-weight: bold;
   font-size:16px;
   font-style: italic;
-  margin-top:70px;
+  margin-top:-30px;
   color: #800040;
 }
 #first_name {
@@ -389,7 +393,7 @@ font-weight: bold
   border-style:solid;
   width:600px;
   margin-left:200px;
-  margin-top:-20px;
+  margin-top:0px;
   background-color: olive;
 }
 #nextborder {
